@@ -18,11 +18,13 @@ public class Controller {
 
     @GetMapping("/")
     public List<Student> getStudents() {
+
         return students.getStudents();
     }
 
     @PostMapping("/add")
     public boolean addStudent(@RequestBody Student student) {
+
         return students.addStudent(student);
     }
 }
